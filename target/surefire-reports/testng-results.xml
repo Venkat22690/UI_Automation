@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-31T00:25:05 IST" name="Surefire suite" finished-at="2023-08-31T00:31:20 IST" duration-ms="374765">
+    <groups>
+    </groups>
+    <test started-at="2023-08-31T00:25:05 IST" name="Surefire test" finished-at="2023-08-31T00:31:20 IST" duration-ms="374765">
+      <class name="Runner.RunProgram_Test">
+        <test-method is-config="true" signature="LoadBrowser()[pri:0, instance:Runner.RunProgram_Test@68267da0]" started-at="2023-08-31T00:25:05 IST" name="LoadBrowser" finished-at="2023-08-31T00:25:20 IST" duration-ms="15189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadBrowser -->
+        <test-method signature="Running()[pri:0, instance:Runner.RunProgram_Test@68267da0]" started-at="2023-08-31T00:25:20 IST" name="Running" finished-at="2023-08-31T00:31:18 IST" duration-ms="357733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Running -->
+        <test-method is-config="true" signature="testDown()[pri:0, instance:Runner.RunProgram_Test@68267da0]" started-at="2023-08-31T00:31:18 IST" name="testDown" finished-at="2023-08-31T00:31:19 IST" duration-ms="1656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDown -->
+      </class> <!-- Runner.RunProgram_Test -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
