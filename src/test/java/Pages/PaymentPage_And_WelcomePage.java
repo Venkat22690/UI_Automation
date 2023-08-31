@@ -66,7 +66,7 @@ public class PaymentPage_And_WelcomePage {
 			@FindBy(xpath = "//input[@name='billingName']")
 			WebElement PaymentBillingName_Entry; 
 					
-			@FindBy(xpath = "//button[@type='submit' and @class='SubmitButton SubmitButton--complete']")
+			@FindBy(xpath = "//button[@type='submit' and contains(@class,'SubmitButton')]")
 			WebElement Subscribe_Button; 
 			
 			@FindBy(xpath = "//span[contains(text(),'Welcome to')]")
@@ -75,8 +75,7 @@ public class PaymentPage_And_WelcomePage {
 			@FindBy(xpath = "//button[text()='Let’s keep going']")
 			WebElement Welcome_Message_Btn; 
 			
-			
-			
+		
 		
 		// End of Object Repositories 
 			
@@ -212,9 +211,11 @@ public class PaymentPage_And_WelcomePage {
 		if(Subscribe_Button.isDisplayed())
 		{
 			test.log(LogStatus.PASS,test.addScreenCapture(Shot.CaptureScreen())+ "Subscribe Button Entry is Available");
-			Thread.sleep(4000);
-			JavascriptExecutor j = (JavascriptExecutor) driver;
-			j.executeScript("arguments[0].click();", Subscribe_Button);
+			Thread.sleep(2000);
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+			Thread.sleep(2000);
+			js.executeScript("arguments[0].click();", Subscribe_Button);
 			// Subscribe_Button.click();
 		}
 		else
