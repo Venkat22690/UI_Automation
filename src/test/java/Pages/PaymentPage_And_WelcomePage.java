@@ -212,14 +212,7 @@ public class PaymentPage_And_WelcomePage {
 		if(Subscribe_Button.isDisplayed())
 		{
 			test.log(LogStatus.PASS,test.addScreenCapture(Shot.CaptureScreen())+ "Subscribe Button Entry is Available");
-			Thread.sleep(2000);
-
-			/* Robot rb = new Robot();
-			rb.keyPress(KeyEvent.VK_TAB);
-			rb.keyPress(KeyEvent.VK_TAB);
-			rb.keyPress(KeyEvent.VK_TAB);
-			rb.keyPress(KeyEvent.VK_ENTER);
-			Thread.sleep(2000); */
+			Thread.sleep(4000);
 			JavascriptExecutor j = (JavascriptExecutor) driver;
 			j.executeScript("arguments[0].click();", Subscribe_Button);
 			// Subscribe_Button.click();
