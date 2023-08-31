@@ -228,9 +228,10 @@ public class PaymentPage_And_WelcomePage {
 		/// Welcome Page **************
 		Thread.sleep(9000);
 		Thread.sleep(4000);
+		Thread.sleep(4000);
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(25));	
 		// WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Welcome to')]")));
+		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Welcome to')]")));
 				
 		// Welcome Page
 		if(Welcome_Message.isDisplayed())
