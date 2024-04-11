@@ -54,6 +54,6 @@ jobs:
         # Required mail subject:
         subject: Github Actions job result
         # Required recipients' addresses:
-        to: venkataraman@uprise.us,venkataraman22690@gmail.com
+        to: iyshwaryasundaresan@gmail.com,venkataraman22690@gmail.com
         # Required sender full name (address can be skipped):
-        from: venkataraman22690@gmail.com     
+        from: Venkataraman S     
