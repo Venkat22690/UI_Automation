@@ -49,10 +49,8 @@ jobs:
         secure: true
         # Optional (recommended) mail server username:
         #username: ${{ secrets.GMAIL_ID }}
-        username: venkataraman@uprise.us
         # Optional (recommended) mail server password:
         #password: ${{ secrets.GMAIL_PASSWORD }}
-        password: Iyshu@12345
         # Required mail subject:
         subject: Github Actions job result
         body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
